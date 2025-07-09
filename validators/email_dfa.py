@@ -35,7 +35,7 @@ def is_valid_email(input_str):
             if char.isalpha():
                 state = 5
             elif char == '.':
-                state = 4  # Accept more domain levels like .edu.np
+                state = 4  
             else:
                 return False
     return state == 5
